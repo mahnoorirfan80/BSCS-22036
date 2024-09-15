@@ -1,7 +1,37 @@
 
 .navbar{
-    background-color: red;
+    background-color: rgb(255, 0, 208);
+    border-radius: 40px;
 }
+.navbar ul{
+    overflow: auto;
+}
+
 .navbar li{
-    
+    float:left;
+    list-style: none;
+    margin: 25px 40px;
+}
+
+.navbar li a{
+    padding: 4px 4px;
+    text-decoration: none;
+    color:rgb(7, 9, 12)
+}
+
+.navbar li a:hover{
+   color: white;
+}
+.search{
+    float: right;
+    color:white;
+    padding: 12px 75px;
+    margin-top: 7px; 
+}
+
+.navbar input{
+    border: 1px solid black;
+    border-radius: 14px;
+    padding: 6px 35px;
+    width: 130px;    
 }
