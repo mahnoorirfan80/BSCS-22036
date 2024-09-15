@@ -110,6 +110,7 @@ header {
     background: #f17bfe(201, 122, 223, 0.8); /* Slightly transparent background */
     border-radius: 15px;
     margin: 30px;
+    
 }
 
 .profile-picture img {
@@ -143,6 +144,7 @@ header {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(129, 6, 134, 0.8);
 }
 
 /* Experience Section */
@@ -163,6 +165,7 @@ header {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(129, 6, 134, 0.8);
 }
 
 /* Projects Section */
@@ -183,6 +186,7 @@ header {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(129, 6, 134, 0.8);
 }
 
 /* Skills Section */
@@ -204,7 +208,19 @@ header {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(129, 6, 134, 0.8);
     
+}
+.skills-item ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding-left: 0; /* Ensure the list aligns properly */
+}
+
+.skills-item li::before {
+    content: "\2713"; /* Checkmark icon before each skill */
+    color: #810686;
+    font-weight: bold;
+    margin-right: 10px;
 }
 
 /* Extracurricular Section */
@@ -225,11 +241,12 @@ header {
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(129, 6, 134, 0.8);
 }
 
 /* Awards Section */
 #awards {
-    background: transparent; /* Transparent to show the gradient */
+    background: transparent; /* Maintain the transparent background to align with the gradient effect */
     padding: 40px;
 }
 
@@ -241,17 +258,40 @@ header {
 }
 
 .awards-item {
-    background:  #f17bfe(201, 122, 223, 0.8);;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: rgba(241, 123, 254, 0.2); /* Light transparent background to match the theme */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(129, 6, 134, 0.8); /* Border to highlight the section */
+}
+
+.awards-item ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.awards-item li {
+    font-size: 18px;
+    padding: 10px 0;
+    color: #222; /* Text color for better readability */
+}
+
+.awards-item li::before {
+    content: "\2713"; /* Checkmark icon before each award */
+    color: #810686;
+    font-weight: bold;
+    margin-right: 10px;
 }
 /* Contact Section */
 #contact {
-    background: transparent; /* Transparent to show the gradient */
-    padding: 40px 20px;
-    text-align: center;
+    background: rgba(241, 123, 254, 0.2); /* Light transparent background to match the theme */
+    padding: 20px; /* Adjust padding to match other sections */
+    text-align: left; /* Align text to the left */
+    border-radius: 10px; /* Matching border-radius with other sections */
+    border: 2px solid rgba(129, 6, 134, 0.8); /* Consistent border style */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adding a shadow to match the other sections */
 }
+
 
 #contact a {
     color: #333;
@@ -261,6 +301,7 @@ header {
 #contact a:hover {
     text-decoration: underline;
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
