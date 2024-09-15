@@ -25,9 +25,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 20px 50px;
     background-color: #810686;
     position: relative;
+    height: 80px;
 }
 
 .navbar ul {
@@ -39,7 +40,7 @@ header {
 }
 
 .navbar li {
-    margin: 0 35px;
+    margin: 0 30px;
     display: flex;
     align-items: center;
 }
@@ -49,12 +50,13 @@ header {
     border: none; /* Remove default border */
     border-radius: 5px; /* Optional: Rounded corners */
     padding: 8px; /* Add padding for better appearance */
-    color: #333; /* Text color for readability */
+    color: #333;
+    font-size: 16px; /* Text color for readability */
 }
 .navbar a {
     text-decoration: none;
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .navbar a:hover {
@@ -66,7 +68,7 @@ header {
     position: relative;
     display: flex;
     align-items: center;
-    margin-left: auto;
+    margin-left: 15px;
 }
 
 .search input {
@@ -75,14 +77,14 @@ header {
     border: none;
     outline: none;
     font-size: 16px;
-    width: 200px; /* Adjust width as needed */
+    width: 150px; /* Adjust width as needed */
 }
 
 .search-button {
     background:white;
     border: none;
-    border-radius: 00px;
-    padding: 6px;
+    border-radius: 15px;
+    padding: 7px;
     cursor: pointer;
     
     display: flex;
@@ -91,7 +93,7 @@ header {
     position: absolute;
     top: 50%; /* Move the button vertically */
     transform: translateY(-50%);
-    right: -40px; /* Adjust this to position the button correctly */
+    right: -7px; /* Adjust this to position the button correctly */
     z-index: 1; /* Ensure button is on top of input */
 }
 
