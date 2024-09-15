@@ -27,6 +27,7 @@ header {
     align-items: center;
     padding: 15px 30px;
     background-color: #810686;
+    position: relative;
 }
 
 .navbar ul {
@@ -34,12 +35,22 @@ header {
     list-style: none;
     margin: 0;
     padding: 0;
+    width: 100px;
 }
 
 .navbar li {
-    margin: 0 15px;
+    margin: 0 35px;
+    display: flex;
+    align-items: center;
 }
-
+#language-switcher {
+    margin-left:auto; /* Push the select element to the right side */
+    background: #fff; /* Optional: Add background color to match the navbar */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Optional: Rounded corners */
+    padding: 8px; /* Add padding for better appearance */
+    color: #333; /* Text color for readability */
+}
 .navbar a {
     text-decoration: none;
     color: #fff;
@@ -59,41 +70,40 @@ header {
 }
 
 .search input {
-    padding: 8px 40px 8px 10px;
+    padding: 8px 40px 8px 10px; /* Space for the icon inside the input */
     border-radius: 20px;
     border: none;
     outline: none;
     font-size: 16px;
+    width: 200px; /* Adjust width as needed */
 }
 
 .search-button {
-    background: #f1daf1;
+    background:white;
     border: none;
-    border-radius: 20px;
-    padding: 8px;
+    border-radius: 00px;
+    padding: 6px;
     cursor: pointer;
-    color: #fff;
+    
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: -40px; /* Adjust this if needed */
-    position: relative; /* Adjust positioning if needed */
+    position: absolute;
+    top: 50%; /* Move the button vertically */
+    transform: translateY(-50%);
+    right: -40px; /* Adjust this to position the button correctly */
     z-index: 1; /* Ensure button is on top of input */
 }
 
 .search-button i {
-    font-size: 20px; /* Adjust font size as needed */
+    font-size: 20px; /* Adjust icon size if needed */
 }
 
-/* Adjust position of icon inside the search bar */
+/* Optional: Adjust icon positioning if necessary */
 .search i {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #fff;
-    font-size: 20px; /* Adjust font size if needed */
+    color: #0b0909;
 }
+
 
 
 /* Profile Section */
@@ -114,8 +124,8 @@ header {
 }
 
 .profile-picture img {
-    width: 300px;
-    height: 350px;
+    width: 350px;
+    height: 400px;
     border-radius: 20%;
     object-fit: cover;
     border: 4px none;
@@ -124,6 +134,10 @@ header {
 .about-me {
     flex: 1;
     padding: 20px;
+    font-size: 20px; 
+    border-radius: 10px;
+   
+    margin-left: -8px;
 }
 
 /* Education Section */
@@ -142,7 +156,7 @@ header {
 .education-item {
     background:  #f17bfe(201, 122, 223, 0.8);;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border: 2px solid rgba(129, 6, 134, 0.8);
 }
@@ -285,11 +299,11 @@ header {
 /* Contact Section */
 #contact {
     background: rgba(241, 123, 254, 0.2); /* Light transparent background to match the theme */
-    padding: 20px; /* Adjust padding to match other sections */
+    padding: 40px; /* Adjust padding to match other sections */
     text-align: left; /* Align text to the left */
     border-radius: 10px; /* Matching border-radius with other sections */
-    border: 2px solid rgba(129, 6, 134, 0.8); /* Consistent border style */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adding a shadow to match the other sections */
+   
+ 
 }
 
 
