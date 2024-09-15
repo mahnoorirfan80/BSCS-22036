@@ -196,6 +196,7 @@ header {
     flex-direction: column;
     gap: 20px;
     padding: 0 20px;
+    
 }
 
 .skills-item {
@@ -203,8 +204,48 @@ header {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
 }
 
+/* Extracurricular Section */
+#extracurricular {
+    background: transparent;
+    padding: 40px;
+}
+
+.extracurricular-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.extracurricular-item {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Awards Section */
+#awards {
+    background: transparent; /* Transparent to show the gradient */
+    padding: 40px;
+}
+
+.awards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.awards-item {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 /* Contact Section */
 #contact {
     background: transparent; /* Transparent to show the gradient */
