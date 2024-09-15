@@ -1,10 +1,10 @@
+/* General Styles */
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -13,12 +13,14 @@ body {
     color: #1d1a1a;
 }
 
+/* Header */
 header {
     position: relative;
     background: #524e4e;
     color: #8b8080;
 }
 
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -48,6 +50,7 @@ header {
     color: #121111;
 }
 
+/* Search Bar */
 .search {
     position: relative;
     margin-left: auto;
@@ -70,16 +73,16 @@ header {
 
 /* Profile Section */
 #profile {
-    background: transparent; /* Make sure background is transparent */
+    background: transparent; /* Ensure background is transparent */
     padding: 60px 0;
 }
 
 .profile-info {
     display: flex;
     justify-content: space-between;
-    align-items:flex-start;
+    align-items: flex-start;
     padding: 50px;
-    background: rgba(196, 98, 223, 0.8);
+    background: rgba(196, 98, 223, 0.8); /* Slightly transparent background */
     border-radius: 15px;
     margin: 30px;
 }
@@ -99,7 +102,7 @@ header {
 
 /* Education Section */
 #education {
-    background: rgba(233, 233, 233, 0.9); /* Use rgba for slight transparency */
+    background: transparent; /* Transparent to show the gradient */
     padding: 40px;
 }
 
@@ -119,10 +122,9 @@ header {
 
 /* Experience Section */
 #experience {
-    #experience {
-        background: rgba(233, 233, 233, 0.9); /* Use rgba for slight transparency */
-        padding: 40px;
-    }
+    background: transparent; /* Transparent to show the gradient */
+    padding: 40px;
+}
 
 .experience-container {
     display: flex;
@@ -138,10 +140,9 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
 /* Projects Section */
 #projects {
-    background: rgba(244, 244, 244, 0.9); /* Use rgba for slight transparency */
+    background: transparent; /* Transparent to show the gradient */
     padding: 40px;
 }
 
@@ -161,7 +162,7 @@ header {
 
 /* Skills Section */
 #skills {
-    background: rgba(233, 233, 233, 0.9); /* Use rgba for slight transparency */
+    background: transparent; /* Transparent to show the gradient */
     padding: 40px;
 }
 
@@ -181,7 +182,7 @@ header {
 
 /* Contact Section */
 #contact {
-    background: rgba(244, 244, 244, 0.9); /* Use rgba for slight transparency */
+    background: transparent; /* Transparent to show the gradient */
     padding: 40px 20px;
     text-align: center;
 }
@@ -209,5 +210,4 @@ header {
     .profile-picture img {
         margin-bottom: 20px;
     }
-}
 }
