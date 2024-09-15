@@ -53,6 +53,8 @@ header {
 /* Search Bar */
 .search {
     position: relative;
+    display: flex;
+    align-items: center;
     margin-left: auto;
 }
 
@@ -61,15 +63,38 @@ header {
     border-radius: 20px;
     border: none;
     outline: none;
+    font-size: 16px;
 }
 
+.search-button {
+    background: #f1daf1;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -40px; /* Adjust this if needed */
+    position: relative; /* Adjust positioning if needed */
+    z-index: 1; /* Ensure button is on top of input */
+}
+
+.search-button i {
+    font-size: 20px; /* Adjust font size as needed */
+}
+
+/* Adjust position of icon inside the search bar */
 .search i {
     position: absolute;
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
     color: #fff;
+    font-size: 20px; /* Adjust font size if needed */
 }
+
 
 /* Profile Section */
 #profile {
