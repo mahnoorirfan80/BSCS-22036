@@ -1,37 +1,114 @@
-
-.navbar{
-    background-color: rgb(255, 0, 208);
-    border-radius: 40px;
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
-.navbar ul{
-    overflow: auto;
+
+header {
+    position: relative;
+    background: #333;
+    color: #fff;
 }
 
-.navbar li{
-    float:left;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #333;
+}
+
+.navbar ul {
+    display: flex;
     list-style: none;
-    margin: 25px 40px;
+    margin: 0;
+    padding: 0;
 }
 
-.navbar li a{
-    padding: 4px 4px;
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
     text-decoration: none;
-    color:rgb(7, 9, 12)
+    color: #fff;
+    font-size: 16px;
 }
 
-.navbar li a:hover{
-   color: white;
-}
-.search{
-    float: right;
-    color:white;
-    padding: 12px 75px;
-    margin-top: 7px; 
+.navbar a:hover {
+    color: #f0f0f0;
 }
 
-.navbar input{
-    border: 1px solid black;
-    border-radius: 14px;
-    padding: 6px 35px;
-    width: 130px;    
+.search {
+    position: relative;
+    margin-left: auto;
 }
+
+.search input {
+    padding: 8px 40px 8px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.search i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+/* Profile Section */
+#profile {
+    background: url('images/background-video.mp4') no-repeat center center fixed;
+    background-size: cover;
+    padding: 60px 0;
+}
+
+.profile-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+
+.about-me {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Education Section */
+#education {
+    
+    background-color: #f4f4f4;
+    padding: 40px ;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.education-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
