@@ -95,6 +95,7 @@ function populateExtracurricular() {
     });
 }
 
+
 // Function to populate Awards section
 function populateAwards() {
     const awardsContainer = document.getElementById('awards');

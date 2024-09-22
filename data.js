@@ -85,7 +85,7 @@ const profileData = {
             "Analytical"
         ]
     },
-    extracurriculars: [
+    extracurricular: [
         {
             title: "2020-Present: Dawn Organization Pakistan",
             description: `Founder and President at youth-based organization redressing societal issues regarding health, education, 
