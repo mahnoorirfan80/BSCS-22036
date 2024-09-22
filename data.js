@@ -90,7 +90,7 @@ const profileData = {
             title: "2020-Present: Dawn Organization Pakistan",
             description: `Founder and President at youth-based organization redressing societal issues regarding health, education, 
                           legal-awareness, and environment. Conducted multiple projects: clothing drive, dengue awareness camp, food drive, 
-                          legal awareness sessions, and curriculum development programs. Fundraised for Flood Victims and organized a plantation drive.`
+                          legal awareness sessions,curriculum development programs. Fundraised for Flood Victims and organized a plantation drive.`
         },
         {
             title: "2023: The Legal Archive, Lahore, PK",
