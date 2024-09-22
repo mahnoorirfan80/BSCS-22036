@@ -1,0 +1,336 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, #b45fff, #f17bfe);
+    color: #1d1a1a;
+}
+
+/* Header */
+header {
+    position: relative;
+    background: #524e4e;
+    color: #8b8080;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #810686;
+    position: relative;
+    height: 80px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+}
+
+.navbar li {
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+}
+#language-switcher {
+    margin-left:auto; /* Push the select element to the right side */
+    background: #fff; /* Optional: Add background color to match the navbar */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Optional: Rounded corners */
+    padding: 8px; /* Add padding for better appearance */
+    color: #333;
+    font-size: 16px; /* Text color for readability */
+}
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: #121111;
+}
+
+/* Search Bar */
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.search input {
+    padding: 8px 40px 8px 10px; /* Space for the icon inside the input */
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 150px; /* Adjust width as needed */
+}
+
+.search-button {
+    background:white;
+    border: none;
+    border-radius: 15px;
+    padding: 7px;
+    cursor: pointer;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%; /* Move the button vertically */
+    transform: translateY(-50%);
+    right: -7px; /* Adjust this to position the button correctly */
+    z-index: 1; /* Ensure button is on top of input */
+}
+
+.search-button i {
+    font-size: 20px; /* Adjust icon size if needed */
+}
+
+/* Optional: Adjust icon positioning if necessary */
+.search i {
+    color: #0b0909;
+}
+
+
+
+/* Profile Section */
+#profile {
+    background: transparent; /* Ensure background is transparent */
+    padding: 60px 0;
+}
+
+.profile-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    background: #f17bfe(201, 122, 223, 0.8); /* Slightly transparent background */
+    border-radius: 15px;
+    margin: 30px;
+    
+}
+
+.profile-picture img {
+    width: 350px;
+    height: 400px;
+    border-radius: 20%;
+    object-fit: cover;
+    border: 4px none;
+}
+
+.about-me {
+    flex: 1;
+    padding: 20px;
+    font-size: 20px; 
+    border-radius: 10px;
+   
+    margin-left: -8px;
+}
+
+/* Education Section */
+#education {
+    background: transparent; /* Transparent to show the gradient */
+    padding: 40px;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.education-item {
+    background:  #f17bfe(201, 122, 223, 0.8);;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(129, 6, 134, 0.8);
+}
+
+/* Experience Section */
+#experience {
+    background: transparent; /* Transparent to show the gradient */
+    padding: 40px;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.experience-item {
+    background: #f17bfe(201, 122, 223, 0.8);;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(129, 6, 134, 0.8);
+}
+
+/* Projects Section */
+#projects {
+    background: transparent; /* Transparent to show the gradient */
+    padding: 40px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.project-item {
+    background:  #f17bfe(201, 122, 223, 0.8);;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(129, 6, 134, 0.8);
+}
+
+/* Skills Section */
+#skills {
+    background: transparent; /* Transparent to show the gradient */
+    padding: 40px;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+    
+}
+
+.skills-item {
+    background:  #f17bfe(201, 122, 223, 0.8);;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(129, 6, 134, 0.8);
+    
+}
+.skills-item ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding-left: 0; /* Ensure the list aligns properly */
+}
+
+.skills-item li::before {
+    content: "\2713"; /* Checkmark icon before each skill */
+    color: #810686;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Extracurricular Section */
+#extracurricular {
+    background: transparent;
+    padding: 40px;
+}
+
+.extracurricular-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.extracurricular-item {
+    background:  #f17bfe(201, 122, 223, 0.8);;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(129, 6, 134, 0.8);
+}
+
+/* Awards Section */
+#awards {
+    background: transparent; /* Maintain the transparent background to align with the gradient effect */
+    padding: 40px;
+}
+
+.awards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.awards-item {
+    background: rgba(241, 123, 254, 0.2); /* Light transparent background to match the theme */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(129, 6, 134, 0.8); /* Border to highlight the section */
+}
+
+.awards-item ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.awards-item li {
+    font-size: 18px;
+    padding: 10px 0;
+    color: #222; /* Text color for better readability */
+}
+
+.awards-item li::before {
+    content: "\2713"; /* Checkmark icon before each award */
+    color: #810686;
+    font-weight: bold;
+    margin-right: 10px;
+}
+/* Contact Section */
+#contact {
+    background: rgba(241, 123, 254, 0.2); /* Light transparent background to match the theme */
+    padding: 40px; /* Adjust padding to match other sections */
+    text-align: left; /* Align text to the left */
+    border-radius: 10px; /* Matching border-radius with other sections */
+   
+ 
+}
+
+
+#contact a {
+    color: #333;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .profile-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-picture img {
+        margin-bottom: 20px;
+    }
+}

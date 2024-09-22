@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional profile showcasing skills, projects, and achievements">
+    <title>Mahnoor Irfan - Professional Profile</title>
+    <link rel="stylesheet" href="styles/styling.css">
+    
+    <script src="data.js" defer></script>
+    <script src="populate.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#profile">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Work Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#extracurricular">Extracurricular</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <div class="search">
+                    <form action="/search" method="get">
+                    <input type="text" name="search" id="search" placeholder="Search here">
+                    <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+                </form>
+                </div>
+              
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <div class="profile-info">
+            <div class="about">
+                <h1>About Me</h1>
+                <div id="about-me-text"></div>
+            </div>
+            <div class="profile-picture">
+                <img src="" alt="Profile Picture" id="profile-pic">
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <div id="education-container"></div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <div id="experience-container"></div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div id="projects-container"></div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skills-item">
+                <h3>Hard Skills</h3>
+                <ul id="hard-skills-list"></ul>
+            </div>
+            <div class="skills-item">
+                <h3>Soft Skills</h3>
+                <ul id="soft-skills-list"></ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extracurriculars Section -->
+    <section id="extracurricular">
+        <h2>Extracurricular Activities</h2>
+        <div id="extracurricular-container"></div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards">
+        <h2>Awards and Honors</h2>
+        <ul id="awards-list"></ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>For more information or to get in touch, please contact me at:</p>
+        <p id="phone"></p>
+        <p>Email: <a href="#" id="email"></a></p>
+        <p>LinkedIn: <a href="#" id="linkedin"></a></p>
+    </section>
+    
+  
+
+</body>
+</html>
