@@ -1,10 +1,4 @@
 
-// Function to populate the "About Me" section
-
-
-
-
-
 function populateAboutMe() {
    console.log("I'm in");
     let aboutMeSection = document.getElementById('about-me-text');

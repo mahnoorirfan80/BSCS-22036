@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Professional profile showcasing skills, projects, and achievements">
@@ -10,6 +9,7 @@
     
     <script src="data.js" defer></script>
     <script src="populate.js" defer></script>
+
 </head>
 <body>
     <header>
@@ -30,6 +30,7 @@
                 </form>
                 </div>
               
+
             </ul>
         </nav>
     </header>
@@ -37,12 +38,24 @@
     <!-- Profile Section -->
     <section id="profile">
         <div class="profile-info">
+
             <div class="about">
                 <h1>About Me</h1>
                 <div id="about-me-text"></div>
             </div>
             <div class="profile-picture">
                 <img src="" alt="Profile Picture" id="profile-pic">
+            <div class="about-me">
+                <h1>About Me</h1>
+                <p>I'm Mahnoor Irfan, currently navigating the exciting journey of being a 5th-semester Computer Science student at ITU. My academic life revolves around a deep fascination with data science, data engineering, and the ever-evolving world of AI. From crunching numbers to uncovering hidden patterns, I’m passionate about transforming data into meaningful insights that can make a real impact.
+
+                    When I’m not immersed in code or algorithms, you’ll find me engaging in community service—a cause close to my heart—where I love giving back and making a difference. On quieter days, I switch gears and dive into painting, a hobby that lets me express my creative side and recharge.
+                    
+                    I’m known for my friendly nature, and I truly believe in the power of collaboration and learning from others. Whether it’s brainstorming solutions to complex problems or just having a good conversation, I’m always up for connecting with people who share my enthusiasm for tech and innovation. Let's build something amazing together!</p>
+            </div>
+            <div class="profile-picture">
+                <img src="images/mypic.jpeg" alt="Profile Picture">
+
             </div>
         </div>
     </section>
@@ -63,109 +76,6 @@
     <section id="projects">
         <h2>Projects</h2>
         <div id="projects-container"></div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skills-item">
-                <h3>Hard Skills</h3>
-                <ul id="hard-skills-list"></ul>
-            </div>
-            <div class="skills-item">
-                <h3>Soft Skills</h3>
-                <ul id="soft-skills-list"></ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Extracurriculars Section -->
-    <section id="extracurricular">
-        <h2>Extracurricular Activities</h2>
-        <div id="extracurricular-container"></div>
-    </section>
-
-    <!-- Awards Section -->
-    <section id="awards">
-        <h2>Awards and Honors</h2>
-        <ul id="awards-list"></ul>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>For more information or to get in touch, please contact me at:</p>
-        <p id="phone"></p>
-        <p>Email: <a href="#" id="email"></a></p>
-        <p>LinkedIn: <a href="#" id="linkedin"></a></p>
-    </section>
-    
-  
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional profile showcasing skills, projects, and achievements">
-    <title>Mahnoor Irfan - Professional Profile</title>
-    <link rel="stylesheet" href="styles/styling.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#profile">About Me</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Work Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#extracurricular">Extracurricular</a></li>
-                <li><a href="#awards">Awards</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <div class="search">
-                    <form action="/search" method="get">
-                    <input type="text" name="search" id="search" placeholder="Search here">
-                    <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
-                </form>
-                </div>
-                <li>
-                    <select id="language-switcher">
-                        <option value="en">English</option>
-                        <option value="ar">Arabic</option>
-                        <option value="ur">Urdu</option>
-                        <option value="fr">French</option>
-                    </select>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Profile Section -->
-    <section id="profile">
-        <div class="profile-info">
-            <div class="about-me">
-                <h1>About Me</h1>
-                <p>I'm Mahnoor Irfan, currently navigating the exciting journey of being a 5th-semester Computer Science student at ITU. My academic life revolves around a deep fascination with data science, data engineering, and the ever-evolving world of AI. From crunching numbers to uncovering hidden patterns, I’m passionate about transforming data into meaningful insights that can make a real impact.
-
-                    When I’m not immersed in code or algorithms, you’ll find me engaging in community service—a cause close to my heart—where I love giving back and making a difference. On quieter days, I switch gears and dive into painting, a hobby that lets me express my creative side and recharge.
-                    
-                    I’m known for my friendly nature, and I truly believe in the power of collaboration and learning from others. Whether it’s brainstorming solutions to complex problems or just having a good conversation, I’m always up for connecting with people who share my enthusiasm for tech and innovation. Let's build something amazing together!</p>
-            </div>
-            <div class="profile-picture">
-                <img src="images/mypic.jpeg" alt="Profile Picture">
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education">
-        <h2>Education</h2>
         <div class="education-container">
             <div class="education-item">
                 <h3>2022 - Present</h3>
@@ -245,6 +155,11 @@
         <div class="skills-container">
             <div class="skills-item">
                 <h3>Hard Skills</h3>
+                <ul id="hard-skills-list"></ul>
+            </div>
+            <div class="skills-item">
+                <h3>Soft Skills</h3>
+                <ul id="soft-skills-list"></ul>
                 <ul>
                     <li>Programming (C++, Python, JavaScript)</li>
                     <li>Web Development (HTML, CSS, JavaScript)</li>
@@ -272,6 +187,8 @@
         </div>
     </section>
 
+
+ 
 
        <!-- Extra curriculars Section -->
        <section id="extracurricular">
@@ -314,6 +231,7 @@
     <!-- Awards Section -->
     <section id="awards">
         <h2>Awards and Honors</h2>
+        <ul id="awards-list"></ul>
         <div class="awards-container">
             <div class="awards-item">
                 <ul>
@@ -331,18 +249,13 @@
     <section id="contact">
         <h2>Contact</h2>
         <p>For more information or to get in touch, please contact me at:</p>
-        <p>Phone: +92 0322 4614565</p>
-        <p>Email: <a href="mailto:mahnoorirfanhafeez@gmail.com">mahnoorirfanhafeez@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/mahnoorirfan24">mahnoorirfan24</a></p>
+        <p id="phone"></p>
+        <p>Email: <a href="#" id="email"></a></p>
+        <p>LinkedIn: <a href="#" id="linkedin"></a></p>
     </section>
+    
+  
 
-    <script>
-        document.querySelector('.search-button').addEventListener('click', function() {
-            var query = document.querySelector('.search input').value;
-           
-            console.log('Search query:', query);
-        });
-    </script>
 </body>
 </html>
 
