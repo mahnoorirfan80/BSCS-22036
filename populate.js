@@ -80,14 +80,13 @@ function populateSkills() {
 
 // Function to populate Extracurricular section
 function populateExtracurricular() {
-    const extracurricularContainer = document.getElementById('extracurricular-container');
-    profileData.extracurriculars.forEach((extra) => {
+    const extracurricularContainer = document.getElementById('extracurricular-container'); // Make sure this matches your HTML
+    profileData.extracurricular.forEach((extra) => {
         const extraItem = document.createElement('div');
-        extraItem.classList.add('extracurricular-item');
+        extraItem.classList.add('extracurricular');
 
         extraItem.innerHTML = `
-              <h3>${extra.title}</h3>
-            
+            <h3>${extra.title}</h3>
             <p>${extra.description}</p>
         `;
 
